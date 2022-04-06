@@ -4,7 +4,7 @@ const path = require('pass')
 const app = express()
 
 app.get('/',(req,res) => {
-    res.sendFile(path.join(_dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../index.html'))
 })
 
 const PORT = process.env.PORT || 4005
